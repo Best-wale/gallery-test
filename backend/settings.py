@@ -16,11 +16,7 @@ SECRET_KEY = 'django-insecure-&kwscf(0#$_kr-rim%x4e^gp7@$&37mbq+kon9by+9^86kbf5%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
-if RENDER_EXTERNAL_HOSTNAME:
-    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
+ALLOWED_HOSTS = ['gallery-test.onrender.com']
 
 
 # Application definition
